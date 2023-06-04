@@ -3,6 +3,10 @@
   "version": "0.0.0",
   "description": "Extension for tailwindcss to support the text-balance property",
   "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/theleoji/tailwindcss-text-balance.git"
+  },
   "scripts": {
     "build": "node build.js",
     "pretest": "npm run build",
