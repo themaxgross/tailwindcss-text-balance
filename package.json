@@ -1,0 +1,15 @@
+{
+  "name": "tailwindcss-text-balance",
+  "version": "0.0.0",
+  "description": "Extension for tailwindcss to support the text-balance property",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Leo Ji <leo@leoji.codes>",
+  "license": "MIT",
+  "peerDependencies": {
+    "tailwindcss": ">=3.0.0 || insiders"
+  }
+}
