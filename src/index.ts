@@ -8,5 +8,4 @@ const textBalance = plugin(function ({ addUtilities }) {
   })
 })
 
-export { textBalance }
 export default textBalance
