@@ -1,6 +1,6 @@
 import plugin from 'tailwindcss/plugin'
 
-const textBalancePlugin = plugin(function ({ addUtilities }) {
+const textBalance = plugin(function ({ addUtilities }) {
   addUtilities({
     '.text-balance': {
       'text-wrap': 'balance',
@@ -8,4 +8,5 @@ const textBalancePlugin = plugin(function ({ addUtilities }) {
   })
 })
 
-export default textBalancePlugin
+export { textBalance }
+export default textBalance
