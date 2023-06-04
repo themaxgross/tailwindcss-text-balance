@@ -1,4 +1,4 @@
-name: Release Axios
+name: Release
 on:
   workflow_dispatch:
     inputs:
