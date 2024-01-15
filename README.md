@@ -3,7 +3,7 @@
 [![npm](https://img.shields.io/npm/v/tailwindcss-text-balance?style=shield)
 ](https://www.npmjs.com/package/tailwindcss-text-balance)
 
-Introduces support for the `text-balance` property in Tailwind CSS.
+Adds utilty classes for `text-wrap: balance` and `text-wrap: pretty` in Tailwind CSS.
 
 See the [Chrome Developers Blog](https://developer.chrome.com/blog/css-text-wrap-balance/) for more
 information about `text-wrap: balance` in CSS and why it's useful.
@@ -31,7 +31,17 @@ This plugin generates the following utilities:
 .text-balance {
     text-wrap: balance;
 }
+
+.text-pretty {
+    text-wrap: pretty;
+}
 ```
+
+Not all browsers support `text-wrap: balance` yet. You can use the
+[CSS.supports()](https://developer.mozilla.org/en-US/docs/Web/API/CSS/supports) method to check if
+the browser supports it before using it.
+
+This plugin does not include a polyfill for `text-wrap: balance`.
 
 ## License
 
