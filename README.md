@@ -5,6 +5,10 @@
 
 Adds utilty classes for `text-wrap: balance` and `text-wrap: pretty` in Tailwind CSS.
 
+This plugin is intended to act as a stepping stone until tailwindcss supports `text-wrap: balance` natively.
+It aims to act as a drop-in
+for [tailwindcss pull request #11320](https://github.com/tailwindlabs/tailwindcss/pull/11320).
+
 See the [Chrome Developers Blog](https://developer.chrome.com/blog/css-text-wrap-balance/) for more
 information about `text-wrap: balance` in CSS and why it's useful.
 
@@ -25,7 +29,7 @@ module.exports = {
 }
 ```
 
-This plugin generates the following utilities:
+This plugin generates the following utilities when the classes are used:
 
 ```css
 .text-balance {
@@ -34,6 +38,14 @@ This plugin generates the following utilities:
 
 .text-pretty {
     text-wrap: pretty;
+}
+
+.text-wrap {
+    text-wrap: wrap;
+}
+
+.text-nowrap {
+    text-wrap: nowrap;
 }
 ```
 
