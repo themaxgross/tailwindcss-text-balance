@@ -35,22 +35,34 @@ it('should output the text-wrap:pretty css', async () => {
   `)
 })
 
-// skipping this test because the actual output is doubled, and I don't know why
-it.skip('should output the text-wrap:balance and text-wrap:pretty css', async () => {
+it('should output the text-wrap:wrap css', async () => {
   const { css } = await postcss([
     require('tailwindcss')({
-      content: [{ raw: 'text-balance text-pretty' }],
+      content: [{ raw: 'text-wrap' }],
       plugins: [plugin],
       corePlugins: { preflight: false },
     }),
   ]).process('@tailwind utilities;', { from: undefined })
 
   expect(css).toMatchInlineSnapshot(`
-    ".text-balance {
-        text-wrap: balance
-    }
-    .text-pretty {
-        text-wrap: pretty
+    ".text-wrap {
+        text-wrap: wrap
+    }"
+  `)
+})
+
+it('should output the text-wrap:nowrap css', async () => {
+  const { css } = await postcss([
+    require('tailwindcss')({
+      content: [{ raw: 'text-nowrap' }],
+      plugins: [plugin],
+      corePlugins: { preflight: false },
+    }),
+  ]).process('@tailwind utilities;', { from: undefined })
+
+  expect(css).toMatchInlineSnapshot(`
+    ".text-nowrap {
+        text-wrap: nowrap
     }"
   `)
 })

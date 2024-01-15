@@ -8,6 +8,8 @@ const textBalance = plugin(function({ addUtilities }) {
     '.text-pretty': {
       'text-wrap': 'pretty',
     },
+    '.text-wrap': { 'text-wrap': 'wrap' },
+    '.text-nowrap': { 'text-wrap': 'nowrap' },
   })
 })
 
