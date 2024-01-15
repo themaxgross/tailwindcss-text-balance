@@ -6,7 +6,7 @@
 Introduces support for the `text-balance` property in Tailwind CSS.
 
 See the [Chrome Developers Blog](https://developer.chrome.com/blog/css-text-wrap-balance/) for more
-information.
+information about `text-wrap: balance` in CSS and why it's useful.
 
 ## Installation
 
