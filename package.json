@@ -1,6 +1,6 @@
 {
   "name": "tailwindcss-text-balance",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Extension for tailwindcss to support the text-balance property",
   "main": "dist/index.js",
   "files": [
