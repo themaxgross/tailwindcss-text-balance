@@ -1,5 +1,9 @@
 # tailwindcss-text-balance
-
+```
+************************************************************
+* Support for this is now available natively in tailwind.  *
+************************************************************
+```
 [![npm](https://img.shields.io/npm/v/tailwindcss-text-balance?style=shield)
 ](https://www.npmjs.com/package/tailwindcss-text-balance)
 
